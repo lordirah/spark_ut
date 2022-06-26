@@ -1,0 +1,4 @@
+"employee_id","first_name","last_name","email","phone_number","hire_date","job_id","salary","manager_id","department_id"
+"100","Steven","King","steven.king@sqltutorial.org","515.123.4567","1987-06-17","4","24000.00","null","9"
+"101","Neena","Kochhar","neena.kochhar@sqltutorial.org","515.123.4568","1989-09-21","5","17000.00","100","9"
+"102","Lex","De Haan","lex.de haan@sqltutorial.org","515.123.4569","1993-01-13","5","17000.00","100","9"
