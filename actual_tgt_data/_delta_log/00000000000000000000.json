@@ -1,0 +1,6 @@
+{"protocol":{"minReaderVersion":1,"minWriterVersion":2}}
+{"metaData":{"id":"acd8203e-a200-4666-ae81-45fae7266483","format":{"provider":"parquet","options":{}},"schemaString":"{\"type\":\"struct\",\"fields\":[{\"name\":\"department_id\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"department_name\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"location_id\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}}]}","partitionColumns":[],"configuration":{},"createdTime":1656828144161}}
+{"add":{"path":"part-00000-0ad88268-984a-48d9-9bba-9a0da80284eb-c000.snappy.parquet","partitionValues":{},"size":1050,"modificationTime":1656828144298,"dataChange":true}}
+{"add":{"path":"part-00001-da9ac34e-4d2b-4db6-84cd-e80874b21a1c-c000.snappy.parquet","partitionValues":{},"size":880,"modificationTime":1656828144301,"dataChange":true}}
+{"add":{"path":"part-00002-d88816eb-1d72-4f41-a5ef-33141c831293-c000.snappy.parquet","partitionValues":{},"size":1349,"modificationTime":1656828144301,"dataChange":true}}
+{"commitInfo":{"timestamp":1656828144313,"operation":"WRITE","operationParameters":{"mode":"ErrorIfExists","partitionBy":"[]"},"isolationLevel":"Serializable","isBlindAppend":true,"operationMetrics":{"numFiles":"3","numOutputRows":"70","numOutputBytes":"3279"},"engineInfo":"Apache-Spark/3.2.0 Delta-Lake/1.1.0"}}

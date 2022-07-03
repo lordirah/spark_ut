@@ -1,10 +1,22 @@
+from delta import *
+from delta.tables import *
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as f
 from pyspark.sql.types import IntegerType, StringType, StructField, StructType
 
 
 def create_spark_session():
-    spark = SparkSession.builder.appName("SampleApp").getOrCreate()
+    builder = (
+        SparkSession.builder.appName("MyApp")
+        .config(
+            "spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension"
+        )
+        .config(
+            "spark.sql.catalog.spark_catalog",
+            "org.apache.spark.sql.delta.catalog.DeltaCatalog",
+        )
+    )
+    spark = configure_spark_with_delta_pip(builder).getOrCreate()
     return spark
 
 
@@ -42,5 +54,4 @@ def main():
     write_data_frame(final_df)
 
 
-if __name__ == "__main__":
-    main()
+main()
